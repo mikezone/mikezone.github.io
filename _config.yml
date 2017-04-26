@@ -1,19 +1,19 @@
-title: John Smith
+title: Mike
 description: My Personal Blog
-author: John Smith
+author: Mike
 logo: /static/img/avatar.png
-github: https://github.com/ashutosh2k12
-about: Freelance developer
+github: https://github.com/mikezone
+about: Leisure Nerd
 
 baseurl: ""
 url: ""
 
-disqus_shortname: aboutashu
-google_analytics: UA-72862926-1
+disqus_shortname: Mike
+# google_analytics: UA-72862926-1
 
-share:
-  twitter_username: \#
-  fb_appid: 000000000000
+# share:
+#   twitter_username: \#
+#   fb_appid: 000000000000
 
 
 enableTags: true
