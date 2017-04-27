@@ -5,7 +5,7 @@ logo: /static/img/avatar.png
 github: https://github.com/mikezone
 about: Leisure Nerd
 
-baseurl: ""
+baseurl: "/"
 url: ""
 
 disqus_shortname: Mike
