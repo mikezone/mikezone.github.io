@@ -11,24 +11,20 @@
     "icon": "fa-comments"
   },
   {
-    "text": "Projects",
-    "url": "/projects",
-    "icon": "fa-desktop"
-  },
-  {
     "text": "Resume",
     "url": "/#",
     "icon": "fa-graduation-cap",
   },
   {
     "text": "Github",
-    "url": "/#",
-    "icon": "fa-github"
+    "url": "https://github.com/mikezone",
+    "icon": "fa-github",
+    "target": "_blank"
   },
   {
     "text": "XML Feed",
     "url": "/feed.xml",
     "icon": "fa-feed",
-    "target": _blank
+    "target": "_blank"
   }
 ]
