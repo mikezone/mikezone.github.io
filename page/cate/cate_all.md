@@ -1,5 +1,5 @@
 ---
 layout: posts_by_category
-categories: all
-permalink: /category/all
+categories: 全部
+permalink: /category/全部
 ---
