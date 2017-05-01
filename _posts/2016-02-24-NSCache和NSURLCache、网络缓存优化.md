@@ -9,50 +9,8 @@ comments:
       displayName: mikezone
       url: 'https://github.com/mikezone'
       picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
-    content: haha
-    date: 2017-05-01T02:02:32.932Z
-  - author:
-      type: full
-      displayName: mikezone
-      url: 'https://github.com/mikezone'
-      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
-    content: '&#x6D4B;&#x8BD5;'
-    date: 2017-05-01T02:05:28.073Z
-  - author:
-      type: full
-      displayName: mikezone
-      url: 'https://github.com/mikezone'
-      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
-    content: '&#x6D4B;&#x8BD5;'
-    date: 2017-05-01T02:08:27.700Z
-  - author:
-      type: full
-      displayName: mikezone
-      url: 'https://github.com/mikezone'
-      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
-    content: '&#x6D4B;&#x8BD5;'
-    date: 2017-05-01T02:08:42.226Z
-  - author:
-      type: full
-      displayName: mikezone
-      url: 'https://github.com/mikezone'
-      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
-    content: test
-    date: 2017-05-01T02:21:01.270Z
-  - author:
-      type: full
-      displayName: mikezone
-      url: 'https://github.com/mikezone'
-      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
-    content: '&#x6D4B;&#x8BD5;'
-    date: 2017-05-01T02:26:19.647Z
-  - author:
-      type: full
-      displayName: mikezone
-      url: 'https://github.com/mikezone'
-      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
-    content: '&#x6D4B;&#x8BD5;'
-    date: 2017-05-01T02:27:40.677Z
+    content: 评论测试
+    date: 2017-05-01T02:02:32.932Z
 ---
 <div><a name="labelTop"></a></div>
 <!--Category-->
