@@ -3,6 +3,7 @@ layout: cnblog_post
 title:  "NSCache和NSURLCache、网络缓存优化"
 date:   2016-02-24 13:50:39
 categories: iOS
+path: /ios/2016/02/24/NSCache和NSURLCache-网络缓存优化.html
 ---
 <div><a name="labelTop"></a></div>
 <!--Category-->
