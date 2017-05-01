@@ -41,11 +41,11 @@ p.info a {
 .full ul,.full ol {
     margin-left: 15px;
 }
-.full img{
+/*.full img{
     display: block;
     max-width: 100%;
     height: auto;
-}
+}*/
 .social-icons {
     margin: 20px 0 0;
 }

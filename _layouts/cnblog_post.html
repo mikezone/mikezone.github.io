@@ -6,11 +6,13 @@ layout: cnblog_default
         <div class="post">
         <div id="cnblogs_post_body">{{ content }}</div>
         </div>
-    <hr />
-    <!-- {% include share-page.html %} -->
 </article>
-
-{%if page.comments %}
+<hr />
+</div><!--post-content well-->
+{% include share-page.html %}
+<hr />
+<p>评论：</p>
+{% if page.comments %}
   {% assign sorted_comments = (page.comments | sort: 'date') %}
 {% endif %}
 {% for c in sorted_comments %}
@@ -27,9 +29,8 @@ layout: cnblog_default
     </div>
   </div>
 {% else %}
-  There are no comments on this post.
+  暂时没有评论.
 {% endfor %}
-
 
 <noscript>Please enable JavaScript to view the comment form powered by <a href="https://commentit.io/">Comm(ent|it)</a></noscript>
 <div id="commentit"></div>
@@ -85,26 +86,4 @@ layout: cnblog_default
   {% if page.next.url %}
     <a class="next pull-right" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
   {% endif %}
-</div>
-
-<!--
-<div class="disqus-comments">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* <![CDATA[ */
-
-        var disqus_shortname = "{{ site.disqus_shortname }}";
-        var disqus_identifier = "{{ site.url }}_{{ page.title }}";
-        var disqus_title = "{{ page.title }}";
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        // (function() {
-        //     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        //     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        //     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        // })();
-    /* ]]> */
-    </script>
-</div>
-</div>
--->
+</div> 
