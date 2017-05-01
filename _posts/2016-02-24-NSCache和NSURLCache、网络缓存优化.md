@@ -1,9 +1,58 @@
 ---
 layout: cnblog_post
-title:  "NSCache和NSURLCache、网络缓存优化"
-date:   2016-02-24 13:50:39
+title: NSCache和NSURLCache、网络缓存优化
+date: 2016-02-24T13:50:39.000Z
 categories: iOS
-path: /ios/2016/02/24/NSCache和NSURLCache-网络缓存优化.html
+comments:
+  - author:
+      type: full
+      displayName: mikezone
+      url: 'https://github.com/mikezone'
+      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
+    content: haha
+    date: 2017-05-01T02:02:32.932Z
+  - author:
+      type: full
+      displayName: mikezone
+      url: 'https://github.com/mikezone'
+      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
+    content: '&#x6D4B;&#x8BD5;'
+    date: 2017-05-01T02:05:28.073Z
+  - author:
+      type: full
+      displayName: mikezone
+      url: 'https://github.com/mikezone'
+      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
+    content: '&#x6D4B;&#x8BD5;'
+    date: 2017-05-01T02:08:27.700Z
+  - author:
+      type: full
+      displayName: mikezone
+      url: 'https://github.com/mikezone'
+      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
+    content: '&#x6D4B;&#x8BD5;'
+    date: 2017-05-01T02:08:42.226Z
+  - author:
+      type: full
+      displayName: mikezone
+      url: 'https://github.com/mikezone'
+      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
+    content: test
+    date: 2017-05-01T02:21:01.270Z
+  - author:
+      type: full
+      displayName: mikezone
+      url: 'https://github.com/mikezone'
+      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
+    content: '&#x6D4B;&#x8BD5;'
+    date: 2017-05-01T02:26:19.647Z
+  - author:
+      type: full
+      displayName: mikezone
+      url: 'https://github.com/mikezone'
+      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
+    content: '&#x6D4B;&#x8BD5;'
+    date: 2017-05-01T02:27:40.677Z
 ---
 <div><a name="labelTop"></a></div>
 <!--Category-->
