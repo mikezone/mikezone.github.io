@@ -3,15 +3,6 @@ layout: cnblog_post
 title: NSCache和NSURLCache、网络缓存优化
 date: 2016-02-24T13:50:39.000Z
 categories: iOS
-comments:
-  - author:
-      type: full
-      displayName: mikezone
-      url: 'https://github.com/mikezone'
-      picture: 'https://avatars0.githubusercontent.com/u/7486137?v=3&s=73'
-    content: '&#x8BC4;&#x8BBA;&#x6D4B;&#x8BD5;'
-    date: 2017-05-01T05:15:46.109Z
-
 ---
 <div><a name="labelTop"></a></div>
 <!--Category-->
