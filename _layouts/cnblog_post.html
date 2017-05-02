@@ -11,6 +11,7 @@ layout: cnblog_default
 </div><!--post-content well-->
 {% include share-page.html %}
 <hr />
+{% include comment.html %}
 <p>评论：</p>
 {% if page.comments %}
   {% assign sorted_comments = (page.comments | sort: 'date') %}

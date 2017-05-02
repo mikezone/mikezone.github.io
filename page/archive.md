@@ -1,3 +1,4 @@
+<!-- 暂时没有使用到这个文件 -->
 <div class="page clearfix">
     <div class="left">
         <h1>{{page.title}}</h1>

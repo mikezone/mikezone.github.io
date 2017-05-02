@@ -41,11 +41,19 @@ p.info a {
 .full ul,.full ol {
     margin-left: 15px;
 }
-/*.full img{
+.full img{
     display: block;
     max-width: 100%;
     height: auto;
-}*/
+}
+/* 评论的img 需要还原*/
+.media-left img {
+    max-width: none !important;
+}
+/* footer的统计img还原*/
+footer img{
+    display: inline !important;
+}
 .social-icons {
     margin: 20px 0 0;
 }
