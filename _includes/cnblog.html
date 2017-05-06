@@ -12,19 +12,12 @@ function fold(curTag,title){
     curTag.innerText = newText; 
 }
 </script>
-<!--prettify.js-->
-<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/prettify/r298/prettify.min.css">
-<script src="http://cdn.bootcss.com/prettify/188.0.0/prettify.min.js"></script>
-<script type="text/javascript">
-  window.onload = function() {
-    prettyPrint();
-  }
-  </script>
 <!--highlight.js-->
 <link rel="stylesheet" href="/static/highlight/styles/xcode.css">
 <script src="/static/highlight/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-  <style type="text/css">
+<!-- css -->
+<style type="text/css">
 /*header和main平级*/
 /*main*/
 /*博文主体*/
@@ -198,11 +191,23 @@ blockquote p {
     font-family: Menlo,Monaco,Consolas,"Courier New",monospace !important;
     font-size: 14px !important;
 }
+
+#cnblogs_post_body pre {
+    padding-bottom: 0px !important;
+}
+
+#cnblogs_post_body pre code {
+    white-space: pre !important;
+}
+
 #cnblogs_post_body .hljs {
     padding:0px !important;
     font-family: Menlo,Monaco,Consolas,"Courier New",monospace !important;
-    font-size: 14px!important;
+    font-size: 13.5px!important;
     background:#f5f5f5;
+}
+#cnblogs_post_body .hljs p {
+    white-space: pre !important;
 }
 .hljs-meta {
     color:#774943 !important;

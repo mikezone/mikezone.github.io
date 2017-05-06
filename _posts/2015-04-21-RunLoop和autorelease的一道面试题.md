@@ -4,6 +4,15 @@ title:  "RunLoop和autorelease的一道面试题"
 date:   2015-04-21 13:50:39
 categories: iOS
 ---
+<!--prettify.js-->
+<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/prettify/r298/prettify.min.css">
+<script src="http://cdn.bootcss.com/prettify/188.0.0/prettify.min.js"></script>
+<script type="text/javascript">
+  window.onload = function() {
+    prettyPrint();
+  }
+</script>
+
 <p><a style="height: 0px;" name="labelTop"></a></p>
 <p><span> 有这么一道iOS面试题 以下代码有没有什么问题?如果有?如何解决? </span></p>
 <pre class="prettyprint">for (int i = 0; i &lt; largeNumber; i++) {	
