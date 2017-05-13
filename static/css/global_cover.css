@@ -1,0 +1,10 @@
+/*body {
+    font-weight: 400 !important;
+}*/
+
+body .container .jumbotron p, 
+body .container .well p,
+body .container-fluid .jumbotron p,
+body .container-fluid .well p {
+	font-weight: 400 !important;
+}
