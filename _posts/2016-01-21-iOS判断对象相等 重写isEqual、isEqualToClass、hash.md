@@ -100,7 +100,8 @@ BOOL wtf = (a == b); // YES
 ### Hashing
 
 最日常的面向对象编程来说，对象判等最主要的用法在于决定集合成员。为了让这一步更快一些，自定义判等实现的类应该也实现hash:
->1.对象相等是相互的([a isEqual:b] ⇒ [b isEqual:a])
+
+>1.对象相等是相互的([a isEqual:b] ⇒ [b isEqual:a])<br/>
 >2.如果对象相等，它们的hash值必须相等([a isEqual:b] ⇒ [a hash] == [b hash])
 >但是，反过来不一定成立：如果它们的hash值相等，两个对象不一定相等。([a hash] == [b hash] ¬⇒ [a isEqual:b])
 
