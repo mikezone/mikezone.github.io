@@ -25,7 +25,7 @@ NSCache和NSURLCache一点关系也没有<br/>
 NSCache和NSURLCache一点关系也没有
 
 然后我推荐大家阅读一下这两篇文章：<br/>
-南峰子<a href="http://southpeak.github.io/blog/2015/02/11/cocoa-foundation-nscache/" target='blank'>Foundation:NSCache</a><br/>
+南峰子<a href="http://southpeak.github.io/2015/02/11/cocoa-foundation-nscache/" target='blank'>Foundation:NSCache</a><br/>
 mattt<a href="http://nshipster.cn/nsurlcache/" target='blank'>NSURLCache</a>
 
 需要注意的一点是：<br/>
