@@ -1,5 +1,5 @@
 title: Mike
-description: My Personal Blog
+description: Mike's Personal Blog
 author: Mike
 logo: /static/img/avatar.png
 github: https://github.com/mikezone
@@ -7,6 +7,7 @@ about: Leisure Nerd
 
 # baseurl: "/"
 # url: "https://mikezone.github.io"
+url: "http://mikezh.com"
 
 disqus_shortname: Mike
 # google_analytics: UA-72862926-1
