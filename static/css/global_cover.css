@@ -8,4 +8,6 @@ body .container-fluid .jumbotron p,
 body .container-fluid .well p {
 	font-weight: 400 !important;
 }
-.btn {text-transform:none !important}
+.btn {
+    text-transform:none !important
+}
