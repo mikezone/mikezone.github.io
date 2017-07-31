@@ -52,7 +52,7 @@ JSContext *context = [self valueForKeyPath:@"documentView.webView.mainFrame.java
 <h4 id="anchor1_1">向js执行环境注入方法</h4>
 
 ```objectivec
-context["sayHello"] = ^{
+context[@"sayHello"] = ^{
     NSArray *args = [JSContext currentArguments];
     if (args.count && args.firstObject) {
         JSValue *name = args.firstObject;
