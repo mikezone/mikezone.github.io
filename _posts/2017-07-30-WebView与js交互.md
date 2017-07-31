@@ -161,7 +161,7 @@ context["vc"] = [JSVCExportImp new];
 
 虽然解决了问题，但是为了解决问题无端增加了一个类，并且这个类本该处理逻辑却与控制器分离了，而且，如果需要使用控制器中的值的时候会变得特别难处理。
 <h5 id="anchor0_0">方法二：</h5>
-另外一种方式是关注于打破强引用。这里用的是YYkit中的一个弱代理类，它是NSProxy的子类，用来代理其他对象，它内部保存一个属性用来弱引用被代理的类，对于被代理类的任何方法它都能按照它本来的执行进行响应。
+另外一种方式是关注于打破强引用。这里用的是YYKit中的一个弱代理类<a href="https://github.com/ibireme/YYKit/blob/master/YYKit/Utility/YYWeakProxy.m" target='blank'>YYWeakProxy</a>（这个类与YYKit框架零耦合，可单独使用），它是NSProxy的子类，用来代理其他对象，它内部保存一个属性用来弱引用被代理的类，对于被代理类的任何方法它都能按照它本来的执行进行响应。
 
 只需将传递给context的对象使用这个弱代理类包装一下即可：
 
