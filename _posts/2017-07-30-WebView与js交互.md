@@ -174,7 +174,7 @@ context["vc"] = [YYWeakProxy proxyWithTarget:self];
 <img src="/static/img/blogRes/webview_js_retain_cycle3.png" width="400" alt="webview、vc、context循环引用3"/>
 
 <h2 id="anchor2_0">WKWebView与js交互</h2>
-iOS推出的WKWebView，性能相对于UIWebView有了较大的提升，使用也非常方便。WKWebView与js交互相比较UIWebView略有不同。
+iOS8.0推出的WKWebView，性能相对于UIWebView有了较大的提升，使用也非常方便。WKWebView与js交互相比较UIWebView略有不同。
 相对于UIWebView调用js代码的方式，WKWebView新增了一个完成回调的处理。
 
 ```objectivec
