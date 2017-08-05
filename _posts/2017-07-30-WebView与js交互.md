@@ -35,7 +35,7 @@ iOS7开始，苹果推出了JavaScriptCore框架。JavaScriptCore框架为基于
 获取当前WebView的js执行环境。
 
 ```objectivec
-JSContext *context = [self valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+JSContext *context = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
 ```
 
 我们可以直接使用这个环境来执行一段js代码：
