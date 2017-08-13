@@ -5,11 +5,11 @@ date:   2016-01-20 13:50:39
 categories: iOS
 ---
 **本文目录**<br/>
-1. iOS宏的经典用法<br/>
-2. Apple的习惯<br/>
-3. \_\_attribute\_\_<br/>
+1. <a href="#anchor1_0">iOS宏的经典用法</a><br/>
+2. <a href="#anchor2_0">Apple的习惯</a><br/>
+3. <a href="#anchor3_0">\_\_attribute\_\_</a><br/>
 
-### iOS宏的经典用法
+<h3 id="anchor1_0">iOS宏的经典用法</h3>
 
 #### 1.常量宏、表达式宏
 ```objectivec
@@ -115,7 +115,7 @@ NSLog(@"%@", format(@"hello"));  // hello
 
 还有一点要注意的是：`#`和`##`只能用在宏定义中，而不能使用在函数或者方法中。
 
-### Apple使用宏的一些习惯
+<h3 id="anchor2_0">Apple使用宏的一些习惯</h3>
 
 ##### 1.类的声明除了引用的其他头文件 用下面一对宏标记
 ```objectivec
@@ -246,12 +246,11 @@ NS_AUTOMATED_REFCOUNT_UNAVAILABLE
 
 总之你会发现只要是不具备表达式或者代码块功能的宏,绝大多数都是由\_\_attribute\_\_定义的，那么\_\_attribute\_\_到底是什么呢，请继续：
 
-### \_\_attribute\_\_
+<h3 id="anchor3_0">__attribute__</h3>
 
 GNU C 的一大特色就是\_\_attribute\_\_机制。\_\_attribute\_\_可以设置函数属性（Function Attribute ）、变量属性（Variable Attribute ）和类型属性（Type Attribute ）。
 \_\_attribute\_\_的书写方式是：\_\_attribute\_\_后面会紧跟一对原括弧，括弧里面是相应的__attribute__参数,格式如：
-\_\_attribute\_\_((attribute-list))
-其位置约束为：`放于声明的尾部“;” 之前`。
+\_\_attribute\_\_((attribute-list))。
 
 那么现在的问题就是什么情况下使用\_\_attribute\_\_，以及如何设置参数attribute-list，主要分为三种情况：
 函数属性（Function Attribute ）、变量属性（Variable Attribute ）和类型属性（Type Attribute ）。
