@@ -1,5 +1,6 @@
 ---
 permalink: /misc/quzhiboxianxia
+layout: 
 ---
 <html>
     <head>
