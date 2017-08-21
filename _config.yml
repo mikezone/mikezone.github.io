@@ -34,3 +34,4 @@ gems: [jekyll-paginate, jekyll-gist, jekyll-archives]
 #     day: '/:year/:month/:day/'
 #     tag: '/tag/:name/'
 #     category: '/category/:name/'
+include: ["misc"]
