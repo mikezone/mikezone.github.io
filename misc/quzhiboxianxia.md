@@ -1,6 +1,6 @@
 ---
 permalink: /misc/quzhiboxianxia
-layout: 
+layout: null
 ---
 <html>
     <head>
