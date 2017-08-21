@@ -35,3 +35,4 @@ gems: [jekyll-paginate, jekyll-gist, jekyll-archives]
 #     tag: '/tag/:name/'
 #     category: '/category/:name/'
 include: ["misc"]
+show_dir_listing: true
