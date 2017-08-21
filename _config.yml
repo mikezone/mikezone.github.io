@@ -16,15 +16,23 @@ disqus_shortname: Mike
 #   twitter_username: \#
 #   fb_appid: 000000000000
 
+permalink: /:year/:month/:title/
+markdown: kramdown
+gems: [jekyll-paginate, jekyll-gist, jekyll-archives]
 
+# Tag
 enableTags: true
 tagarray: []
 
+# paginate
 paginate: 10
 per_page: 10
-paginate_path: "/page:num/"
-markdown: kramdown
-gems: [jekyll-paginate, jekyll-gist, jekyll-archives]
+paginate_path: "page/:num/"
+
+# directory
+include: ["misc"]
+show_dir_listing: true
+
 # jekyll-archives:
 #   enabled: ['jekyll', 'others']
 #   layout: 'posts_by_category'
@@ -34,5 +42,3 @@ gems: [jekyll-paginate, jekyll-gist, jekyll-archives]
 #     day: '/:year/:month/:day/'
 #     tag: '/tag/:name/'
 #     category: '/category/:name/'
-include: ["misc"]
-show_dir_listing: true
