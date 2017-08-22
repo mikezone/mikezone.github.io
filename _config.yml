@@ -34,7 +34,13 @@ include: ["misc"]
 show_dir_listing: true
 
 # jekyll-archives:
-#   enabled: ['jekyll', 'others']
+#   enabled: all
+#   enabled:
+#     - categories
+#   enabled:
+#     - year
+#     - month
+#     - tags
 #   layout: 'posts_by_category'
 #   permalinks:
 #     year: '/:year/'
@@ -42,3 +48,7 @@ show_dir_listing: true
 #     day: '/:year/:month/:day/'
 #     tag: '/tag/:name/'
 #     category: '/category/:name/'
+
+# derectory_listing
+directory_listing_title: "Contents: "
+directory_listing_prefix: "Contents of "

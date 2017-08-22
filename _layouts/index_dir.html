@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- modify depend on meta.html -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/static/img/favicon.ico" />
+    <title>Index of {% if page.title %}{{ page.title }}{% endif %}</title>
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
+
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+      
+      <!-- modify depend on css.html -->
+
+      <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+
+      <!-- Core BootStrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <!-- Material Design CSS -->
+      <link rel="stylesheet" href="{{ site.baseurl }}/static/css/bootstrap-material-design.min.css">
+  </head>
+
+  <body style="margin:10px 0 0 50px">
+      <h1>Index of {% if page.title %}{{ page.title }}{% endif %}</h1>
+    {{ content }}
+  </body>
+</html>
