@@ -2,10 +2,10 @@
 function fold(curTag,title){    
     var oldText = curTag.innerText;
     var div = document.getElementById(title);
-    if(div.style.display=="inline"){
+    if (div.style.display=="inline") {
         div.style.display="none"
         var newText = "+"+oldText.substring(1,oldText.length);      
-    }else{
+    } else {
         div.style.display="inline"
         var newText = "-"+oldText.substring(1,oldText.length);
     }
