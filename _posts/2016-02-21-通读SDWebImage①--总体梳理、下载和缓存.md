@@ -18,7 +18,7 @@ categories: iOS
 <!--Category结束-->
 
 要写点关于SDWebImage的文章了，这段时间看的不少，总体的感受是SDWebImage的代码不如AFN那么规整、有条理，并没有吐槽的意思，稍微细细看一下就会有这样的感受。本篇文章不会用大量的篇幅来介绍SDWebImage如何使用，而是更多地介绍SDWebImage的整体思路和一些实现细节，还有介绍一些不是特别常用的一些功能(因为有不少iOS开发人员还只是会使用sd_setImageWithURL)。首先我们要看一下SDWebImage的整体结构：
-<img src="http://7vim0m.com1.z0.glb.clouddn.com/img%2FSnip20160218_9.png" width="900" alt="SDWebImage整体结构图"/>
+<img src="http://qiniu.storage.mikezh.com/img%2FSnip20160218_9.png" width="900" alt="SDWebImage整体结构图"/>
 这里我要说明的一点是我当前使用SD的git提交版本是e41af47e2f5de9317d55083e23168e076b550e34(Sat Jan 30 02:54:23 2016 +0100)。让我们看一下这张图的内容。
 可以将SDWebImage的框架分为三个部分：
 

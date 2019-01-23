@@ -46,12 +46,12 @@ SSL 的握手部分结束，SSL安全通道建立完成，开始进行数据通�
 
 对于访问的过程中，通常会在第3步出现问题，以12306的购票页面为例：
 当进行到第3步的时候，浏览器验证为：发行服务器证书的CA是不可靠的，可以在Chrome的地址栏中点击被打了红叉的锁来查看这个页面的证书颁发机构，
-<img src="http://7vim0m.com1.z0.glb.clouddn.com/img%2FSnip20160131_9.png" width="600" alt="12306HTTPS证书"/>
+<img src="http://qiniu.storage.mikezh.com/img%2FSnip20160131_9.png" width="600" alt="12306HTTPS证书"/>
 我们可以搜索到这个命名为'SRCA'的机构实际上是‘中铁认证中心’也就是12306自己的认证系统，它是用了自己的认证系统给自己颁发了一个SSL加密证书，而Chrome怎么会认可它呢。顺便看了一下百度的证书:
-<img src="http://7vim0m.com1.z0.glb.clouddn.com/img%2FSnip20160131_10.png" width="600" alt="baiduHTTPS证书"/>
+<img src="http://qiniu.storage.mikezh.com/img%2FSnip20160131_10.png" width="600" alt="baiduHTTPS证书"/>
 这是一个由美国Symantec Trust Network组织颁发的证书，是一个比较权威的证书颁发机构，几乎在所有的浏览器中都是认可的。而baidu使用的证书是这个机构的根证书的子证书，而之所以浏览器能认可它，是因为根证书通过webtrust国际认证，并已经内置到各大浏览器如谷歌，火狐，微软等系统中。
 那么这毕竟只是浏览器默认的一种认证方式，毕竟我们还是需要访问12306的，这里就要改变一下第3步验证的结果，在浏览器中，我们可以手动选择信任，然后继续向下进行。
-<img src="http://7vim0m.com1.z0.glb.clouddn.com/img%2FSnip20160131_12.png" width="400" alt="手动信任证书"/>
+<img src="http://qiniu.storage.mikezh.com/img%2FSnip20160131_12.png" width="400" alt="手动信任证书"/>
 这样就能访问这些网站了。
 
 ### 使用系统的NSURLSession模拟浏览器完成HTTPS的证书认证
@@ -126,7 +126,7 @@ typedef NS_ENUM(NSInteger, NSURLSessionAuthChallengeDisposition) {
 因为我们使用的是使用第2步中服务端传回来的证书，所以即使是对付https://kyfw.12306.cn/otn/leftTicket/init这样的流氓页面也同样是可以的。但是对于iOS9来说并不是这样，必须设置了Allow Arbitrary Loads为YES才会达到预期效果。
 
 对于AFN，无论实在iOS9之前还是iOS9之后，当访问https://kyfw.12306.cn/otn/leftTicket/这个页面的时候都会走不通，这是因为AFN对于自签名的HTTPS网站有着特殊的验证(有关验证细节，请看本文下一部分)，必须证书提前导入到项目中，将Chrome中的证书导入到项目中，请参见下图：
-<img src="http://7vim0m.com1.z0.glb.clouddn.com/img%2Fchrome_cer.gif" width="720" alt="Chrome生成证书"/>
+<img src="http://qiniu.storage.mikezh.com/img%2Fchrome_cer.gif" width="720" alt="Chrome生成证书"/>
 将生成的证书文件`kyfw.12306.cn.cer`加入到xcode项目中，使用AFN按照如下方式调用即可：
 
 ```objectivec

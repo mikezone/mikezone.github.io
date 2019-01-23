@@ -56,7 +56,7 @@ categories: iOS
 这个方法的实现思路是这样的：<br/>
 1.取data的第一个字节的数据，辨识出JPG/JPEG、PNG、GIF、TIFF这几种图片格式，返回其对应的MIME类型。<br/>
 2.如果第一个字节是数据为`0x52`，需要进一步检测，因为以`0x52`为文件头的文件也可能会是rar等类型(可以在<a href="http://baike.baidu.com/link?url=_PP3WE8Xx_j8lEFuiO-MfBmI-TskdkeF1ZQE6CUUUGtQbPE6RB1SGTal7-oUZJVWK0n9AkpnQpQ2E4YRScA1q_" target='blank'>文件头</a>查看)，而webp的前12字节有着固定的数据：<br/>
-<img src="http://7vim0m.com1.z0.glb.clouddn.com/img%2FKVZ%7D50%60FID%5BX1%5DJ%5D%5D4J%5DRRU.jpg" width="400" alt="WebP文件前12字节数据"/>
+<img src="http://qiniu.storage.mikezh.com/img%2FKVZ%7D50%60FID%5BX1%5DJ%5D%5D4J%5DRRU.jpg" width="400" alt="WebP文件前12字节数据"/>
 因此前12字节数据有前缀`RIFF`和后缀`WEBP`的就是WebP格式。
 <div style="text-align: right;font-size:9pt;"><a href="#labelTop" name="anchor2_0">回到顶部</a></div>
 

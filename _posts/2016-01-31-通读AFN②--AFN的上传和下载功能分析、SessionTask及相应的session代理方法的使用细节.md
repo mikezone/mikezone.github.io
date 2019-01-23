@@ -9,7 +9,7 @@ categories: iOS
 
 文件的上传和下载同时也包括普通的数据请求说说到底都是使用了系统的NSURLSession类创建对应的Task，然后执行，为了更好得理解，我们先理清一下NSURLSessionTask类以及它的子类、NSURLSessionTaskDelegate协议和它的子协议之间的关系，以及各种代理方法调用的时机。
 先看一张图：
-<img src="http://7vim0m.com1.z0.glb.clouddn.com/img%2FNSObjectx.jpg" width="800" alt="NSURLSessionTask类、NSURLSessionTaskDelegate协议"/>
+<img src="http://qiniu.storage.mikezh.com/img%2FNSObjectx.jpg" width="800" alt="NSURLSessionTask类、NSURLSessionTaskDelegate协议"/>
 
 其中的调用是指，task在resume之后会调用的Session对应的代理方法声明在的协议，例如：
 当执行一个NSURLSessionDataTask类型的任务resume之后，负责创建它的session将会调用在NSURLSessionDataDelegate中定义的几个方法:
